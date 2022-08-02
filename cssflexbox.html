@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css flexbox</title>
+    <style>
+        body{
+            background-color: rgb(171, 245, 245);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+            margin-top: 30px;
+        }
+        img{
+            /*max-width: 100%;/*expande até no máximo 100% do tamanho do conteiner*/
+            display: block;
+            max-width: 600px;/*para melhorar o layout das imagens, pois os tamanhos não são padrão*/
+            max-height: 200px;/*para melhorar o layout das imagens, pois os tamanhos não são padrão*/
+            border: solid;
+            margin: auto;/*alinha o seletor img de forma centralizada dentro da div. Só funciona se colocar um valor para width, pois o alinhamento de uma div é "inline"*/
+        }
+        p{
+            text-align: center;
+        }
+        #logomarca{
+            width: 100px;
+            height: 100px;
+            margin: 0px;
+        }
+        .cabecalho{
+            display: flex;/*coloca um seletor de um lado outro do outro*/
+            justify-content: space-between;/*coloca espaço entre os seletores*/
+            align-items: center;/*alinha o "logo" com outro seletor*/
+            padding: 20px;
+            flex-wrap: wrap;/* caso a tela diminua, o seletor fica embaixo do outro*/
+            background-color: blue;
+        }
+        .menu{
+            display: flex;
+        }
+        .menu li{
+            margin-left: 10px;/*para dar um espaço entre as opções*/
+            list-style: none;/*retira o marcador do item*/
+        }
+        .menu li a{
+            display: block; /*dá uma área de contato para o clique*/
+            padding: 10px;
+            background-color: tomato;
+        }
+        
+        /*configurando o flexbox*/
+        .blocoimagens{
+            display: flex;/*coloca lado a lado*/
+            flex-wrap: wrap;/*indica que vai "quebrar a linha", caso a tela fique pequena*/
+            max-width: 1024px;/*tamanho máximo do seletor, caso a tela fique grande. Quem define o tamanho é o desenvolvedor*/
+            margin: 0 auto;/*centraliza os conteúdos, caso a tela fique grande*/
+        }
+        .blocoimagens div{
+            flex: 1 1 200px;/*1 - a div se expande| 1 - fica menor com o tamanho da tela| 200px - o tamanho da base da div*/
+            margin: 10px;/*coloca uma margem entre as imagens para espaça-las*/
+            border: solid;
+            flex-wrap: wrap;
+            background-color: burlywood;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <img id="logomarca" src="./imgs/bikes/bikelogo.png">
+        <nav>
+            <ul class="menu">
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Usando Flexbox</h1>
+    <section class="blocoimagens">
+        <div>
+            <img src="./imgs/bikes/bike1.jpeg">
+            <p>legenda</p>
+        </div>
+        <div>
+            <img src="./imgs/bikes/bike2.jpeg">
+            <p>legenda</p>
+        </div>
+        <div>
+            <img src="./imgs/bikes/bike3.jpeg">
+            <p>legenda</p>
+        </div>
+        <div>
+            <img src="./imgs/bikes/bike4.jpeg">
+            <p>legenda</p>
+        </div>
+        <div>
+            <img src="./imgs/bikes/bike5.jpeg">
+            <p>legenda</p>
+        </div>
+        <div>
+            <img src="./imgs/bikes/bike6.jpeg">
+            <p>legenda</p>
+        </div>
+        <div>
+            <img src="./imgs/bikes/bike7.jpeg">
+            <p>legenda</p>
+        </div>
+        <div>
+            <img src="./imgs/bikes/bike8.jpeg">
+            <p>legenda</p>
+        </div>
+        <div>
+            <img src="./imgs/bikes/bike9.jpeg">
+            <p>legenda</p>
+        </div>
+        <div>
+            <img src="./imgs/bikes/bike10.jpeg">
+            <p>legenda</p>
+        </div>
+    </section>
+</body>
+</html>
