@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros mais Caros do mundo</title>
+    <style>
+
+    
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(255, 255, 255);
+        margin: 200px;
+    }
+    
+    .cabeçalho{
+        display: flex;/*coloca um seletor de um lado outro do outro*/
+        justify-content: space-between;/*coloca espaço entre os seletores*/
+        align-items: center;/*alinha o "logo" com outro seletor*/
+        padding: 20px;
+        flex-wrap: wrap;/* caso a tela diminua, o seletor fica embaixo do outro*/
+        background-color: blue;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    p div{
+        text-align: right;
+    }
+    img{
+            /*max-width: 100%;/*expande até no máximo 100% do tamanho do conteiner*/
+        display: block;
+        max-width: 600px;/*para melhorar o layout das imagens, pois os tamanhos não são padrão*/
+        max-height: 200px;/*para melhorar o layout das imagens, pois os tamanhos não são padrão*/
+        margin: auto;
+    }
+    .rodapé{
+        background-color: aliceblue;
+    }
+    .blococarros{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .blococarros img{
+        text-align: ;
+        flex: 1 1 200px;
+        margin: 10px;
+        border: solid;
+        flex-wrap: wrap;
+        background-color: rgb(255, 255, 255);
+    }
+    #bugatti{
+        width: 100px;
+        height: 100px;
+        margin: 0px;
+    }
+
+    </style>
+</head>
+<body>
+    <header class="cabeçalho">
+    <h1>TOP 10 CARROS MAIS CAROS DO MUNDO</h1>
+    <img id="bugatti" src="./imgs/carros/bugatti.jpg">
+    </header>
+    <section class="blococarros">
+        <div>
+            <img src="./imgs/carros/bugatti-la-voiture-noire-2019.jpeg">
+        </div>
+        <div>
+            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+        </div>
+        <div>
+            <img src="./imgs/carros/pagani-zonda-hp-barchetta.jpg">
+        </div>
+        <div>
+            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+        </div>
+        <div>
+            <img src="./imgs/carros/Rolls-Royce-Sweptail.jpg">
+        </div>
+        <div>
+            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+        </div>
+        <div>
+            <img src="./imgs/carros/bugatti-centodieci.jpg">
+        </div>
+        <div>
+            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+        </div>
+        <div>
+            <img src="./imgs/carros/bugatti-divo.jpg">
+        </div>
+        <div>
+            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+        </div>
+        <div>
+            <img src="./imgs/carros/bugatti-chiron-super-sport-300.jpg">
+        </div>
+        <div>
+            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+        </div>
+        <div>
+            <img src="./imgs/carros/lamborghini-veneno-2013.jpeg">
+        </div>
+        <div>
+            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+        </div>
+        <div>
+            <img src="./imgs/carros/McLaren-P1-LM.jpg">
+        </div>
+        <div>
+            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+        </div>
+        <div>
+            <img src="./imgs/carros/aston-martin-valkyrie-3.jpg">
+        </div>
+        <div>
+            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+        </div>
+        <div>
+            <img src="./imgs/carros/gordon-murray-t50.jpg">
+        </div>
+        <div>
+            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+        </div>
+    </section>
+    <footer class="rodapé">
+        rodapé foda
+    </footer>
+</body>
+</html>
