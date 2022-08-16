@@ -7,14 +7,21 @@
     <title>Carros mais Caros do mundo</title>
     <style>
 
-    
-    
     body{
         font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(212, 32, 32);
         margin: 200px;
     }
-    
+    p{
+        text-align: right;
+    }
+    img{
+            /*max-width: 100%;/*expande até no máximo 100% do tamanho do conteiner*/
+        display: block;
+        max-width: 600px;/*para melhorar o layout das imagens, pois os tamanhos não são padrão*/
+        max-height: 200px;/*para melhorar o layout das imagens, pois os tamanhos não são padrão*/
+        margin: auto;
+    }
     .cabeçalho{
         display: flex;/*coloca um seletor de um lado outro do outro*/
         justify-content: space-between;/*coloca espaço entre os seletores*/
@@ -28,17 +35,6 @@
         left: 0;
         right: 0;
     }
-
-    p div{
-        text-align: right;
-    }
-    img{
-            /*max-width: 100%;/*expande até no máximo 100% do tamanho do conteiner*/
-        display: block;
-        max-width: 600px;/*para melhorar o layout das imagens, pois os tamanhos não são padrão*/
-        max-height: 200px;/*para melhorar o layout das imagens, pois os tamanhos não são padrão*/
-        margin: auto;
-    }
     .rodapé{
         background-color: aliceblue;
     }
@@ -49,7 +45,7 @@
         margin: 0 auto;
     }
     .blococarros img{
-        text-align: ;
+        text-align: center;
         flex: 1 1 200px;
         margin: 10px;
         border: solid;
@@ -57,6 +53,7 @@
         background-color: rgb(255, 255, 255);
     }
     #bugatti{
+        border-style: solid;
         width: 100px;
         height: 100px;
         margin: 0px;
@@ -74,61 +71,72 @@
             <img src="./imgs/carros/bugatti-la-voiture-noire-2019.jpeg">
         </div>
         <div>
-            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+            <p>Bugatti La Voiture Noire</p>
+            <p>US$ 18,68 milhões</p>
         </div>
         <div>
             <img src="./imgs/carros/pagani-zonda-hp-barchetta.jpg">
         </div>
         <div>
-            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+            <p>Pagani Zonda HP Barchetta</p>
+            <p>US$ 17,6 milhões</p>
+            
         </div>
         <div>
             <img src="./imgs/carros/Rolls-Royce-Sweptail.jpg">
         </div>
         <div>
-            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+            <p>Rolls-Royce Sweptail</p>
+            <p>US$ 12,8 milhões</p>
         </div>
         <div>
             <img src="./imgs/carros/bugatti-centodieci.jpg">
         </div>
         <div>
-            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+            <p>Bugatti Centodieci</p>
+            <p>US$ 9 milhões</p>
         </div>
         <div>
             <img src="./imgs/carros/bugatti-divo.jpg">
         </div>
         <div>
-            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+            <p>Bugatti Divo</p>
+            <p>US$ 6 milhões</p>
         </div>
         <div>
             <img src="./imgs/carros/bugatti-chiron-super-sport-300.jpg">
         </div>
         <div>
-            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+            <p>Bugatti Chiron Super Sport 300+</p>
+            <p>US$ 5,7 milhões</p>
         </div>
         <div>
             <img src="./imgs/carros/lamborghini-veneno-2013.jpeg">
         </div>
         <div>
-            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+            <p>Lamborghini Veneno Roadster</p>
+            <p>US$ 4,5 milhões</p>
         </div>
         <div>
             <img src="./imgs/carros/McLaren-P1-LM.jpg">
         </div>
         <div>
-            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+            <p>McLaren P1 LM</p>
+            <p>US$ 3,7 milhões</p>
         </div>
         <div>
             <img src="./imgs/carros/aston-martin-valkyrie-3.jpg">
         </div>
         <div>
-            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+            <p>Aston Martin Valkyrie</p>
+            <p>US$ 3,2 milhões</p>
         </div>
         <div>
             <img src="./imgs/carros/gordon-murray-t50.jpg">
         </div>
         <div>
-            <p>Bugatti La Voiture Noire – US$ 18,68 milhões</p>
+            <p>Gordon Murray T.50</p>
+            <p>US$ 3 milhões</p>
         </div>
     </section>
     <footer class="rodapé">
