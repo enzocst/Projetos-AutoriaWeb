@@ -11,11 +11,11 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     .cabecalho{
-        display: flex;/*coloca um seletor de um lado outro do outro*/
-        justify-content: space-between;/*coloca espaço entre os seletores*/
-        align-items: center;/*alinha o "logo" com outro seletor*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 20px;
-        flex-wrap: wrap;/* caso a tela diminua, o seletor fica embaixo do outro*/
+        flex-wrap: wrap;
         background-repeat: no-repeat;
         
         top: 0;
@@ -34,16 +34,42 @@
     #secao1{
         text-align: center;
     }
+    #h1{
+        text-align: center;
+    }
+    .secaodisciplinas{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .secaodisciplinas img{
+        flex: 1 1 200px;
+        margin: 10px;
+        flex-wrap: wrap;
+        background-color: rgb(107, 38, 38);
+    }
     </style>
 </head>
 <body>
     <header class="cabecalho">
         <img id="logomarca" src="./imgs/figuras/logomarca.jpg">
-        <h1>PETENZO</h1>
+        <h1 id="h1">PETENZO</h1>
         <a class="secoes" href="#secao1">Seção disciplina 1</a>
         <a class="secoes" href="#secao2">Seção disciplina 2</a>
         <a class="secoes" href="#secao3">Apresentação</a>
     </header>
     <p id="secao1">Quimica</p>
+    <section class="secaodisciplinas">
+        <div>
+            <img src="./imgs/figuras/raioatomicofigura.jpg">
+        </div>
+        <div>
+            <p>Essa propriedade se relaciona com o tamanho do átomo, e para comparar esta medida é preciso levar em conta dois fatores:</p>
+            <p>- Quanto maior o número de níveis, maior será o tamanho do átomo;</p>
+            <p>O átomo que apresenta maior número de prótons exerce uma maior atração sobre seus elétrons.</p>
+        </div>
+        </div>
+    </section>
 </body>
 </html>
