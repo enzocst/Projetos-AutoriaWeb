@@ -10,12 +10,18 @@
     body{
         font-family: Arial, Helvetica, sans-serif;
         background-color: cyan;
-        margin: 150px;
+        margin: 150px; 
     }
     .menu{
+        background-color: azure;
         text-align: center;
         position: fixed;
-        
+        padding: 20px;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        left: 0;
+        margin-top: -25px;
     }
     .cabecalho{
         padding: 10px;
@@ -71,15 +77,21 @@
     <header class="cabecalho">
         <img id="logomarca" src="./imgs/figuras/logomarca.jpg">
         <div id="nomeguerra">
-            <h1 id="h1">PINK-S</h1>
+            <h1 id="h1">PETENZO</h1>
         </div>
     </header>
     <div class="menu">
-        <a class="secoes" href="#secao1">Quimica</a>
-        <a class="secoes" href="#secao2">arquitetura de Redes</a>
-        <a class="secoes" href="#secao3">Apresentação</a>
+        <div>
+            <strong><a class="secoes" href="#secao1">Quimica</a></strong>
+        </div>
+        <div>
+            <strong><a class="secoes" href="#secao2">Arquitetura de Redes</a></strong>
+        </div>
+        <div>
+            <strong><a class="secoes" href="#secao3">Apresentação</a></strong>
+        </div>
     </div>
-    <hr>
+    <br>
     <h2 id="secao1">Quimica</h2>
     <section class="secaodisciplinas">
         <div>
