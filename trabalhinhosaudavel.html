@@ -56,14 +56,11 @@
         text-align: center;
     }
     .secaodisciplinas{
-        display: inline-block;
-        vertical-align: top;
         flex-wrap: wrap;
         max-width: 1024px;
         margin: 0 auto;
     }
     .secaodisciplinas img{
-        float: left;
         max-width: 200px;
         max-height: 200px;
         flex: 1 1 200px;
@@ -93,82 +90,99 @@
     </div>
     <br>
     <h2 id="secao1">Quimica</h2>
-    <section class="secaodisciplinas">
-        <div>
-            <img src="./imgs/figuras/raioatomicofigura.jpg">
-            <h1>Raio Atomico</h1>
-            <p>Essa propriedade se relaciona com o tamanho do átomo, e para comparar esta medida é preciso levar em conta dois fatores:</p>
-            <p>- Quanto maior o número de níveis, maior será o tamanho do átomo;</p>
-            <p>- O átomo que apresenta maior número de prótons exerce uma maior atração sobre seus elétrons.</p>
-        </div>
-        <div>
-            <img src="./imgs/figuras/energiadeionizacao.jpg">
-            <h1>Energia de Ionização</h1>
-            <p>"Energia necessária para remover um ou mais elétrons de um átomo isolado no estado gasoso: quanto maior o tamanho do átomo, menor será a energia de ionização".</p>
-            <p>- Quanto maior o número de níveis, maior será o tamanho do átomo;</p>
-            <p>- O átomo que apresenta maior número de prótons exerce uma maior atração sobre seus elétrons.</p>
-        </div>
-        <div>
-            <img src="./imgs/figuras/afinidadeeletronica.jpg">
-            <h1>Afinidade Eletronico</h1>
-            <p>Essa propriedade se relaciona com o tamanho do átomo, e para comparar esta medida é preciso levar em conta dois fatores:</p>
-            <p>- Quanto maior o número de níveis, maior será o tamanho do átomo;</p>
-            <p>- O átomo que apresenta maior número de prótons exerce uma maior atração sobre seus elétrons.</p>
-        </div>
-        <div>
-            <img src="./imgs/figuras/eletronegatividade.jpg">
-            <h1>Eletronegatividade</h1>
-            <p>Essa propriedade se relaciona com o tamanho do átomo, e para comparar esta medida é preciso levar em conta dois fatores:</p>
-            <p>- Quanto maior o número de níveis, maior será o tamanho do átomo;</p>
-            <p>- O átomo que apresenta maior número de prótons exerce uma maior atração sobre seus elétrons.</p>
-        </div>
-    </section>
-    <hr>
+    <table class="secaodisciplinas">
+        <tr>
+            <td><img src="./imgs/figuras/raioatomicofigura.jpg"></td>
+            <td>
+                Raio Atômico
+                Essa propriedade se relaciona com o tamanho do átomo, e para comparar esta medida é preciso levar em conta dois fatores:
+
+                - Quanto maior o número de níveis, maior será o tamanho do átomo;
+                
+                - O átomo que apresenta maior número de prótons exerce uma maior atração sobre seus elétrons.
+            </td>
+        <tr>
+            <td><img src="./imgs/figuras/energiadeionizacao.jpg">
+            <td>
+                Energia de Ionização
+
+                Energia necessária para remover um ou mais elétrons de um átomo isolado no estado gasoso: quanto maior o tamanho do átomo, menor será a energia de ionização.
+
+                - Em uma mesma família esta energia aumenta de baixo para cima;
+                
+                - Em um mesmo período a Energia de Ionização aumenta da esquerda para a direita.
+            </td>
+        </tr>
+        <tr>
+            <td><img src="./imgs/figuras/afinidadeeletronica.jpg"></td>
+            <td>
+                Afinidade Eletrônica
+
+                É a energia liberada quando um átomo no estado gasoso (isolado) captura um elétron. Em uma família ou período, quanto menor o raio, maior a afinidade eletrônica.
+            </td>
+        </tr>
+        <tr>
+            <td><img src="./imgs/figuras/eletronegatividade.jpg"></td>
+            <td>
+                Eletronegatividade
+
+                Força de atração exercida sobre os elétrons de uma ligação. Na tabela periódica a eletronegatividade aumenta de baixo para cima e da esquerda para a direita.
+                
+                Essa propriedade se relaciona com o raio atômico, sendo que, quanto menor o tamanho de um átomo, maior será a força de atração sobre os elétrons."
+            </td>
+        </tr>
+    </table>
     <hr>
     <h2 id="secao2">Arquiteturas de Redes</h2>
-    <section class="secaodisciplinas2">
-        <div>
-            <img src="./imgs/figuras/aplicação.png">
-            <h1>Aplicação</h1>
-            <p>A camada de aplicação é o topo da arquitetura TCP/IP, tratada de forma monolítica, onde são realizadas a maior parte das requisições para execução de tarefas na rede. Ela faz a comunicação entre os programas e os protocolos de transporte e é responsável por tudo que está relacionado aos serviços de comunicação que visam a interação junto ao usuário.</p>
-            <p>Dentro da camada de aplicação são utilizados alguns dos seguintes protocolos:</p>
-            <p>TELNET (Terminal Virtual);</p>
-            <p>FTP (File Transfer Protocol);</p>
-            <p>SMTP (Send Mail Transfer Protocol);</p>
-            <p>DNS (Domain Name System);</p>
-            <p>HTTP (Hypertext Transfer Protocol).</p>
-        </div>
-        <div>
-            <img src="./imgs/figuras/transporte.png">
-            <h1>Transporte</h1>
-            <p>"A camada de transporte é a segunda camada de cima para baixo na hierarquização da arquitetura TCP/IP, e corresponde igualmente à mesma camada no modelo OSI. Neste nível são executadas ações relacionadas à confiabilidade e integridade dos dados por meio de funções como o controle de fluxo, controle de erro, sequenciação e multiplexação de mensagens.</p>
-            <p>Os protocolos definidos para esta camada são o UDP (User Datagram Protocol) e o TCP (Transmission Control Protocol), com o objetivo de garantir a conversação entre dois hosts.</p>
-        </div>
-        <div>
-            <img src="./imgs/figuras/internet.png">
-            <h1>Internet</h1>
-            <p>A camada de internet, também conhecida como inter-redes, é responsável pela permissão de envio de pacotes por hosts a qualquer rede e pela garantia de que esses dados cheguem ao seu destino final. Equivalente ao que é operacionalizado na camada de rede do modelo OSI, na arquitetura TCP/IP a camada de internet tem como embasamento os protocolos IP (Internet Protocol) e ICMP (Internet Control Message Protocol).</p>
-        </div>
-        <div>
-            <img src="./imgs/figuras/rede.png">
-            <h1>Interface de rede</h1>
-            <p>Esta é a camada de base da arquitetura TCP/IP, correspondente às camadas de enlace de dados e física do OSI, onde ocorre a conexão básica do host com a rede por meio de algum protocolo capaz de enviar pacotes IP. É por meio desta camada que é possível transmitir dados a outros computadores dentro de uma mesma rede física, além de realizar o envio do datagrama recebido pela camada de internet através de meios físicos.</p>
-            <p>Para se manter em funcionamento a camada de Interface de rede utiliza como principais protocolos: Ethernet para Redes Locais (LAN – Local Area Network) e PPP (Point-to-Point Protocol) para Redes de Longa Distância (WAN – Wide Area Network).</p>
-        </div>
-    </section>
-    <hr>
-
+    <table>
+        <tr>
+            <td><img src="./imgs/figuras/aplicação.png"></td>
+            <td>
+                Aplicação
+                A camada de aplicação é o topo da arquitetura TCP/IP, tratada de forma monolítica, onde são realizadas a maior parte das requisições para execução de tarefas na rede. Ela faz a comunicação entre os programas e os protocolos de transporte e é responsável por tudo que está relacionado aos serviços de comunicação que visam a interação junto ao usuário.
+                Dentro da camada de aplicação são utilizados alguns dos seguintes protocolos:<
+                TELNET (Terminal Virtual);
+                FTP (File Transfer Protocol);
+                SMTP (Send Mail Transfer Protocol);
+                DNS (Domain Name System);
+                HTTP (Hypertext Transfer Protocol).
+            </td>
+        </tr>
+        <tr>
+            <td><img src="./imgs/figuras/transporte.png"></td>
+            <td>
+                Transporte
+                "A camada de transporte é a segunda camada de cima para baixo na hierarquização da arquitetura TCP/IP, e corresponde igualmente à mesma camada no modelo OSI. Neste nível são executadas ações relacionadas à confiabilidade e integridade dos dados por meio de funções como o controle de fluxo, controle de erro, sequenciação e multiplexação de mensagens.
+                Os protocolos definidos para esta camada são o UDP (User Datagram Protocol) e o TCP (Transmission Control Protocol), com o objetivo de garantir a conversação entre dois hosts.
+            </td>
+        </tr>
+        <tr>
+            <td><img src="./imgs/figuras/internet.png"></td>
+            <td>
+                Internet
+                A camada de internet, também conhecida como inter-redes, é responsável pela permissão de envio de pacotes por hosts a qualquer rede e pela garantia de que esses dados cheguem ao seu destino final. Equivalente ao que é operacionalizado na camada de rede do modelo OSI, na arquitetura TCP/IP a camada de internet tem como embasamento os protocolos IP (Internet Protocol) e ICMP (Internet Control Message Protocol).
+            </td>
+        </tr>
+        <tr>
+            <td><img src="./imgs/figuras/rede.png"></td>
+            <td>
+                Interface de rede
+                Esta é a camada de base da arquitetura TCP/IP, correspondente às camadas de enlace de dados e física do OSI, onde ocorre a conexão básica do host com a rede por meio de algum protocolo capaz de enviar pacotes IP. É por meio desta camada que é possível transmitir dados a outros computadores dentro de uma mesma rede física, além de realizar o envio do datagrama recebido pela camada de internet através de meios físicos.
+                Para se manter em funcionamento a camada de Interface de rede utiliza como principais protocolos: Etrernet para Redes Locais (LAN – Local Area Network) e PPP (Point-to-Point Protocol) para Redes de Longa Distância (WAN – Wide Area Network).
+            </td>
+        </tr>
+    </table>
     <hr>
     <h2 id="secao3">APRESENTAÇÃO DO GRUPO</h2>
-    <section>
-        <div>
+    <table>
+        <tr>
             <img src="">
             <p>JOSÉ ENZO COSTA ALMEIDA</p>
-        </div>
-        <div>
+        </tr>
+        <tr>
             <img src="">
             <p>JAMILLY PETALA DO SANTOS SIQUEIRA </p>
-        </div>
-    </section>
+        </tr>
+    </table>
 </body>
 </html>
