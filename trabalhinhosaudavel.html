@@ -10,31 +10,40 @@
     body{
         font-family: Arial, Helvetica, sans-serif;
         background-color: cyan;
+        margin: 150px;
     }
     .menu{
         text-align: center;
+        position: fixed;
         
     }
     .cabecalho{
+        padding: 10px;
         position: fixed;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background-color: purple;
         top: 0;
         left: 0;
         right: 0;
     }
+    #nomeguerra{
+        width: 100%;
+    }
     .secoes{
         text-align: center;
         color: black;
     }
     #logomarca{
+        border: solid   ;
         width: 100px;
         height: 100px;
-        margin: 0px;
     }
     #secao1{
+        text-align: center;
+    }
+    #secao2{
         text-align: center;
     }
     #h1{
@@ -61,13 +70,15 @@
 <body>
     <header class="cabecalho">
         <img id="logomarca" src="./imgs/figuras/logomarca.jpg">
-        <h1 id="h1">JOSÉ ENZO COSTA ALMEIDA</h1>
+        <div id="nomeguerra">
+            <h1 id="h1">PINK-S</h1>
+        </div>
     </header>
-    <ul class="menu">
+    <div class="menu">
         <a class="secoes" href="#secao1">Quimica</a>
         <a class="secoes" href="#secao2">arquitetura de Redes</a>
         <a class="secoes" href="#secao3">Apresentação</a>
-    </ul>
+    </div>
     <hr>
     <h2 id="secao1">Quimica</h2>
     <section class="secaodisciplinas">
@@ -101,9 +112,8 @@
         </div>
     </section>
     <hr>
-    <h1 align="center">ALGUMA COISA SEPARANDO AS SEÇÕES</h1>
     <hr>
-    <h2 id="secao2">Arquieteturas de Redes</h2>
+    <h2 id="secao2">Arquiteturas de Redes</h2>
     <section class="secaodisciplinas2">
         <div>
             <img src="./imgs/figuras/aplicação.png">
@@ -132,6 +142,20 @@
             <h1>Interface de rede</h1>
             <p>Esta é a camada de base da arquitetura TCP/IP, correspondente às camadas de enlace de dados e física do OSI, onde ocorre a conexão básica do host com a rede por meio de algum protocolo capaz de enviar pacotes IP. É por meio desta camada que é possível transmitir dados a outros computadores dentro de uma mesma rede física, além de realizar o envio do datagrama recebido pela camada de internet através de meios físicos.</p>
             <p>Para se manter em funcionamento a camada de Interface de rede utiliza como principais protocolos: Ethernet para Redes Locais (LAN – Local Area Network) e PPP (Point-to-Point Protocol) para Redes de Longa Distância (WAN – Wide Area Network).</p>
+        </div>
+    </section>
+    <hr>
+
+    <hr>
+    <h2 id="secao3">APRESENTAÇÃO DO GRUPO</h2>
+    <section>
+        <div>
+            <img src="">
+            <p>JOSÉ ENZO COSTA ALMEIDA</p>
+        </div>
+        <div>
+            <img src="">
+            <p>JAMILLY PETALA DO SANTOS SIQUEIRA </p>
         </div>
     </section>
 </body>
