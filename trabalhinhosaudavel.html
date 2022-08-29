@@ -73,6 +73,25 @@
         margin: 10px;
         flex-wrap: wrap;
     }
+    .img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    #rodape{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    #rodapefinal{
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
     </style>
 </head>
 <body>
@@ -122,6 +141,8 @@
                     - Em um mesmo período a Energia de Ionização aumenta da esquerda para a direita.
                 </td>
             </tr>
+        </table>
+        <table class="secaodisciplinas2">
             <tr>
                 <td><img src="./imgs/figuras/afinidadeeletronica.jpg"></td>
                 <td>
@@ -149,6 +170,7 @@
     </div>
     <div>
     <table class="secaodisciplinas">
+        <div>
         <tr>
             <td><img src="./imgs/figuras/aplicação.png"></td>
             <td>
@@ -170,6 +192,8 @@
                 Os protocolos definidos para esta camada são o UDP (User Datagram Protocol) e o TCP (Transmission Control Protocol), com o objetivo de garantir a conversação entre dois hosts.
             </td>
         </tr>
+    </table>
+    <table class="secaodisciplinas2">
         <tr>
             <td><img src="./imgs/figuras/internet.png"></td>
             <td>
@@ -188,18 +212,18 @@
     </table>
     </div>
     <hr>
-<footer>
     <div>
         <h2 id="secao3">Apresentação do Grupo</h2>
     </div>
-    <div>
-        <table class="secaoapresentacao">
+<footer id="rodape">
+    <div id="rodadapefinal">
+        <table class="secaodisciplinas">
             <tr>
-                <td><img src="./imgs/figuras/avatarenzo.jpg"></td>
+                <td><img class="img" src="./imgs/figuras/avatarenzo.jpg"></td>
                 <td>JOSÉ ENZO COSTA ALMEIDA</td>
             </tr>
             <tr>
-                <td><img src="./imgs/figuras/RM.jpeg"></td>
+                <td><img class="img" src="./imgs/figuras/RM.jpeg"></td>
                 <td>JAMILLY PETALA DO SANTOS SIQUEIRA</td>
             </tr>
         </table>
