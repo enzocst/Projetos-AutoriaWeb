@@ -9,68 +9,279 @@
     
     body{
         font-family: Arial, Helvetica, sans-serif;
+        background-color: cyan;
+        margin: 150px; 
+    }
+    .menu{
+        display: flex;
+        background-color: azure;
+        text-align: center;
+        position: fixed;
+        padding: 20px;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        left: 0;
+        margin-top: -25px;
     }
     .cabecalho{
+        padding: 10px;
+        position: fixed;
         display: flex;
-        justify-content: space-between;s
+<<<<<<< HEAD
+        justify-content: space-between;
+=======
+        justify-content: center;
+>>>>>>> 17ec00f6d40d1e381981d4b3f6b731c3b3823f27
         align-items: center;
-        padding: 20px;
-        flex-wrap: wrap;
-        background-repeat: no-repeat;
-        
+        background-color: rgb(3, 156, 184);
         top: 0;
         left: 0;
         right: 0;
+    }
+    #nomeguerra{
+        width: 100%;
     }
     .secoes{
         text-align: center;
         color: black;
     }
     #logomarca{
+        border: solid   ;
         width: 100px;
         height: 100px;
-        margin: 0px;
     }
     #secao1{
         text-align: center;
+    }
+    #secao2{
+        text-align: center;
+    }
+    #secao3{
+        text-align: center;
+        
     }
     #h1{
         text-align: center;
     }
     .secaodisciplinas{
+        margin-right: 400px;
+        width: 500px;
         display: flex;
         flex-wrap: wrap;
         max-width: 1024px;
         margin: 0 auto;
     }
     .secaodisciplinas img{
+        border: solid;
+        max-width: 200px;
+        max-height: 200px;
         flex: 1 1 200px;
         margin: 10px;
         flex-wrap: wrap;
-        background-color: rgb(107, 38, 38);
+    }
+    .secaodisciplinas2{
+        margin-left: 400px;
+        margin-top: 20px;
+    }
+    .secaodisciplinas2 img{
+        border: solid;
+        max-width: 200px;
+        max-height: 200px;
+        flex: 1 1 200px;
+        margin: 10px;
+        flex-wrap: wrap;
+    }
+    .img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    #rodape{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    #rodapefinal{
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+    .secaoprincipal{
+        height: auto;
+        padding: 10px;
+        width: auto;
+        margin-top: 300px;
+    }
+    .textoemcima{
+        width: 100%;
+        align-items: center;
+    }
+    .textoembaixo{
+        margin-top: 200px;
+        width: 100%;
+    }
+    .imgrodape{
+        max-width: 50px;
+        max-height: 50px;
     }
     </style>
 </head>
 <body>
     <header class="cabecalho">
         <img id="logomarca" src="./imgs/figuras/logomarca.jpg">
-        <h1 id="h1">PETENZO</h1>
-        <a class="secoes" href="#secao1">Seção disciplina 1</a>
-        <a class="secoes" href="#secao2">Seção disciplina 2</a>
-        <a class="secoes" href="#secao3">Apresentação</a>
+        <div id="nomeguerra">
+            <h1 id="h1">PETENZO</h1>
+        </div>
     </header>
-    <p id="secao1">Quimica</p>
-    <section class="secaodisciplinas">
+    <div class="menu">
         <div>
-            <img src="./imgs/figuras/raioatomicofigura.jpg">
+            <strong><a class="secoes" href="#secao1">Quimica</a></strong>
         </div>
         <div>
-            <h1>Raio Atomico</h1>
-            <p>Essa propriedade se relaciona com o tamanho do átomo, e para comparar esta medida é preciso levar em conta dois fatores:</p>
-            <p>- Quanto maior o número de níveis, maior será o tamanho do átomo;</p>
-            <p>- O átomo que apresenta maior número de prótons exerce uma maior atração sobre seus elétrons.</p>
+            <strong><a class="secoes" href="#secao2">Arquitetura de Redes</a></strong>
         </div>
+        <div>
+            <strong><a class="secoes" href="#secao3">Apresentação</a></strong>
         </div>
-    </section>
+    </div>
+    <br>
+    <div>
+        <h2 id="secao1">Quimica</h2>
+    </div>
+    <div id="secaoprincipal">
+        <div>
+        <table class="secaodisciplinas">
+            <tr>
+                <td><img src="./imgs/figuras/raioatomicofigura.jpg"></td>
+                <td>
+                    Raio Atômico
+                    Essa propriedade se relaciona com o tamanho do átomo, e para comparar esta medida é preciso levar em conta dois fatores:
+
+                    - Quanto maior o número de níveis, maior será o tamanho do átomo;
+                
+                    - O átomo que apresenta maior número de prótons exerce uma maior atração sobre seus elétrons.
+                </td>
+            </tr>
+        </table>
+        <table class="secaodisciplinas">
+            <tr>
+                <td><img src="./imgs/figuras/energiadeionizacao.jpg">
+                <td>
+                    Energia de Ionização
+
+                    Energia necessária para remover um ou mais elétrons de um átomo isolado no estado gasoso: quanto maior o tamanho do átomo, menor será a energia de ionização.
+
+                    - Em uma mesma família esta energia aumenta de baixo para cima;
+                
+                    - Em um mesmo período a Energia de Ionização aumenta da esquerda para a direita.
+                </td>
+            </tr>
+        </table>
+        <table class="secaodisciplinas2">
+            <tr>
+                <td><img src="./imgs/figuras/afinidadeeletronica.jpg"></td>
+                <td>
+                    Afinidade Eletrônica
+
+                    É a energia liberada quando um átomo no estado gasoso (isolado) captura um elétron. Em uma família ou período, quanto menor o raio, maior a afinidade eletrônica.
+                </td>
+            </tr>
+        </table>
+        <table class="secaodisciplinas2">
+            <tr>
+                <td><img src="./imgs/figuras/eletronegatividade.jpg"></td>
+                <td>
+                    Eletronegatividade
+
+                    Força de atração exercida sobre os elétrons de uma ligação. Na tabela periódica a eletronegatividade aumenta de baixo para cima e da esquerda para a direita.
+                
+                    Essa propriedade se relaciona com o raio atômico, sendo que, quanto menor o tamanho de um átomo, maior será a força de atração sobre os elétrons."
+                </td>
+            </tr>
+        </table>
+        </div>
+    <hr>
+        <h2 id="secao2">Arquiteturas de Redes</h2>
+    <table class="">
+    <div>
+        <div>
+        <tr class="textoembaixo">
+            <td><img src="./imgs/figuras/aplicação.png"></td>
+            <td>
+                Aplicação
+                A camada de aplicação é o topo da arquitetura TCP/IP, tratada de forma monolítica, onde são realizadas a maior parte das requisições para execução de tarefas na rede. Ela faz a comunicação entre os programas e os protocolos de transporte e é responsável por tudo que está relacionado aos serviços de comunicação que visam a interação junto ao usuário.
+                Dentro da camada de aplicação são utilizados alguns dos seguintes protocolos:<
+                TELNET (Terminal Virtual);
+                FTP (File Transfer Protocol);
+                SMTP (Send Mail Transfer Protocol);
+                DNS (Domain Name System);
+                HTTP (Hypertext Transfer Protocol).
+            </td>
+        </tr>
+        </div>
+    </table>
+    <table>
+        <div>
+        <tr class="textoemcima">
+            <td><img src="./imgs/figuras/transporte.png"></td>
+            <td>
+                Transporte
+                "A camada de transporte é a segunda camada de cima para baixo na hierarquização da arquitetura TCP/IP, e corresponde igualmente à mesma camada no modelo OSI. Neste nível são executadas ações relacionadas à confiabilidade e integridade dos dados por meio de funções como o controle de fluxo, controle de erro, sequenciação e multiplexação de mensagens.
+                Os protocolos definidos para esta camada são o UDP (User Datagram Protocol) e o TCP (Transmission Control Protocol), com o objetivo de garantir a conversação entre dois hosts.
+            </td>
+        </tr>
+        </div>
+    </table>
+    <table class="">
+        <div>
+        <tr class="textoembaixo">
+            <td><img src="./imgs/figuras/internet.png"></td>
+            <td>
+                Internet
+                A camada de internet, também conhecida como inter-redes, é responsável pela permissão de envio de pacotes por hosts a qualquer rede e pela garantia de que esses dados cheguem ao seu destino final. Equivalente ao que é operacionalizado na camada de rede do modelo OSI, na arquitetura TCP/IP a camada de internet tem como embasamento os protocolos IP (Internet Protocol) e ICMP (Internet Control Message Protocol).
+            </td>
+        </tr>
+        </div>
+    </table>
+    <table>
+        <div>
+        <tr class="textoemcima">
+            <td><img src="./imgs/figuras/rede.png"></td>
+            <td>
+                Interface de rede
+                Esta é a camada de base da arquitetura TCP/IP, correspondente às camadas de enlace de dados e física do OSI, onde ocorre a conexão básica do host com a rede por meio de algum protocolo capaz de enviar pacotes IP. É por meio desta camada que é possível transmitir dados a outros computadores dentro de uma mesma rede física, além de realizar o envio do datagrama recebido pela camada de internet através de meios físicos.
+                Para se manter em funcionamento a camada de Interface de rede utiliza como principais protocolos: Etrernet para Redes Locais (LAN – Local Area Network) e PPP (Point-to-Point Protocol) para Redes de Longa Distância (WAN – Wide Area Network).
+            </td>
+        </tr>
+        </div>
+    </table>
+    </div>
+    <hr>
+    <div>
+        <h2 id="secao3">Apresentação do Grupo</h2>
+    </div>
+<footer id="rodape">
+    <div id="rodadapefinal">
+        <table class="secaodisciplinas">
+            <tr>
+                <td><img class="imgrodape" src="./imgs/figuras/avatarenzo.jpg"></td>
+                <td>JOSÉ ENZO COSTA ALMEIDA</td>
+            </tr>
+        </table>
+    </div>
+    <div id="rodapefinal">
+        <table class="secaodisciplinas">
+            <tr>
+                <td><img class="imgrodape" src="./imgs/figuras/RM.jpeg"></td>
+                <td>JAMILLY PETALA DO SANTOS SIQUEIRA</td>
+            </tr>
+        </table>
+    </div>
+</footer>
 </body>
 </html>
