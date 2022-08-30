@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgb(111, 67, 149);
+        }
+        body{
+            background-color: bisque;
+        }
+        #logomarca{
+            width: 90px; 
+            height: 90px; 
+            margin: 0px; 
+            border: solid;
+        }
+        a{
+            text-decoration: double;
+            color: rgb(21, 19, 19);
+            font-family: sans-serif;
+            font-size: 16px;
+            padding: 100px;
+            flex-wrap: wrap;
+
+        }
+        #titulo{
+            font-family: Arial;
+            text-align:center;
+            margin: -70px;
+            color: aliceblue;
+            align-content: center; 
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        p{
+            float: right;
+            text-align: left;
+            padding: 5px;
+        }
+        .direita{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            float: right;
+        }
+        .blocoimagens{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #p{
+            text-align: right;
+        }
+        #secoes a{ 
+            display: flex; 
+            padding: 30px;
+            margin: -75px;
+            margin-top: -12px;
+            color: blue;
+            position: fixed;
+        }
+        #linhavertical {
+            height: 510px;
+            width: 800px;
+            border-right: 1px solid;
+            
+        }
+        .blocoimagensdois {
+            display: flex;
+            flex-wrap: nowrap;
+            max-width: 20px;
+            float:  center;
+        }
+        .blocoimagensdois div {
+            flex: 1 1 200px;
+            margin: 10px;
+            flex-wrap: nowrap;
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+            align-items: center;
+        }
+        .blocoimagensdois img {
+            width: 260px;
+            height: 80px;
+            padding: 20px;
+            margin: auto;
+            align-items: center;
+        }
+        .blocoimagensdois p {
+            text-align: justify;
+            font-size: 15px;
+            font-family: "Lucida Sans";
+        }
+        .titulosecoes{
+            text-align: center;
+            width: auto;
+        }
+        #conteinerfooter{
+            padding: 10px;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .blocosdecima{
+            margin-right: 400px;
+            width: 500px;
+            float: left;
+        }
+        .imagens{
+            max-width: 400px;
+            max-height: 300px;
+        }
+        .imagemdireita{
+            float: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <img id="logomarca" src= "./imgs/figuras/logomarca.jpg">
+        <h1 id="titulo">PETENZO</h1>
+     </header>
+     <br>
+     <br>
+     <br>
+     <br> 
+     <hr/>
+     <nav>
+        <ul id="secoes">
+            <li><a href="#secao1">Seção disciplina 1</a></li>
+            <li><a href="#secao2">Seção disciplina 2</a></li>
+            <li><a href="#secao3">Apresentação</a></li>
+         </ul>
+     </nav>
+     <br>
+     <br>
+     <br>
+     <hr>
+    <h2 align="center">
+        <a name="secao1">Secao disciplina1</a>
+    </h2>
+    <section class="blocoimagens">
+    <ul>
+        <li>
+            <img src="./imgs/figuras/raioatomicofigura.jpg" width="160">
+            <p>
+                Raio Atômico. Essa propriedade se relaciona<br>
+                com o tamanho do átomo, e para comparar esta<br>
+                medida é preciso levar em conta dois fatores:<br>
+                - Quanto maior o número de níveis, maior será<br>
+                o tamanho do átomo; - O átomo que apresenta maior<br>
+                número de prótons exerce uma maior atração sobre seus elétrons.
+            </p>
+        </li>
+        <li>
+            <img src="./imgs/figuras/afinidadeeletronica.jpg" width="220">
+            <p>
+                Afinidade Eletrônica É a energia liberada quando um átomo
+                <br> no estado gasoso (isolado) captura um elétron. Em uma<br>
+                família ou período, quanto menor o raio, maior a afinidade eletrônica.<br>
+                Eletronegatividade Força de atração exercida sobre os elétrons de uma<br>
+                ligação. Na tabela periódica a eletronegatividade aumenta de baixo para<br>
+                cima e da esquerda para a direita. Essa propriedade se relaciona com o<br>
+                raio atômico, sendo que, quanto menor o tamanho de um átomo, maior será<br>
+                a força de atração sobre os elétrons."
+            </p>
+        </li>
+    </ul>
+    </section>
+    <section id="direita">
+        <ul>
+            <li><!--parte debaixo, direita-->
+                <p>
+                    <img class="direita" src="./imgs/figuras/energiadeionizacao.jpg" width="160"></p>
+                    <p id="p">
+                        Energia de Ionização Energia necessária para remover um ou<br>
+                        mais elétrons de um átomo isolado no estado gasoso: quanto maior<br>
+                        o tamanho do átomo, menor será a energia de ionização. - Em uma<br>
+                        mesma família esta energia aumenta de baixo para cima; - Em um mesmo<br>
+                        período a Energia de Ionização aumenta da esquerda para a direita.
+                    </p>
+            </li>
+                </p>
+        <ul>
+             <li>
+            <img class= "direita" src="./imgs/figuras/eletronegatividade.jpg" width="220">
+                <p id="p">
+                    Eletronegatividade Força de atração exercida sobre os elétrons de uma ligação.<br>
+                    Na tabela periódica a eletronegatividade aumenta de baixo para cima e da esquerda<br>
+                    para a direita. Essa propriedade se relaciona com o raio atômico, sendo que, quanto<br>
+                    menor o tamanho de um átomo, maior será a força de atração sobre os elétrons."
+                </p>
+            </li> 
+        </ul>
+    </section>
+    <hr><h3 align="center">Alguma coisa separando as secoes</h3>
+    <hr>
+    <div>
+        <h2 align="center"><a name="secao2">Secao disciplina 2</a></h2>
+    </div>
+    <section class="blocoimagensdois">
+        <div>
+            <img id="aplicacao" src="./imgs/figuras/aplicação.png">
+            <h4>Aplicação</h4>
+            <p><b>Aplicação</b>
+                Aplicação
+                A camada de aplicação é o topo da arquitetura TCP/IP, tratada de forma monolítica, onde são realizadas a maior parte das requisições para execução de tarefas na rede. Ela faz a comunicação entre os programas e os protocolos de transporte e é responsável por tudo que está relacionado aos serviços de comunicação que visam a interação junto ao usuário.
+                Dentro da camada de aplicação são utilizados alguns dos seguintes protocolos:<
+                TELNET (Terminal Virtual);
+                FTP (File Transfer Protocol);
+                SMTP (Send Mail Transfer Protocol);
+                DNS (Domain Name System);
+                HTTP (Hypertext Transfer Protocol).</p>
+        </div>
+        <div id="linha-vertical"></div>
+        <div>
+            <h4>Transporte</h4>
+            <p>
+                "A camada de transporte é a segunda camada de cima para baixo na hierarquização da arquitetura TCP/IP, e corresponde igualmente à mesma camada no modelo OSI. Neste nível são executadas ações relacionadas à confiabilidade e integridade dos dados por meio de funções como o controle de fluxo, controle de erro, sequenciação e multiplexação de mensagens.
+                Os protocolos definidos para esta camada são o UDP (User Datagram Protocol) e o TCP (Transmission Control Protocol), com o objetivo de garantir a conversação entre dois hosts.
+            </p>
+                <img id="transporte" src="./imgs/figuras/transporte.png">
+        </div>
+        <div id="linha-vertical"></div>
+        <div>
+            <h4>Internet</h4>
+            <img id="internet" src="./imgs/figuras/internet.png">
+            <p>
+                A camada de internet, também conhecida como inter-redes, é responsável pela permissão de envio de pacotes por hosts a qualquer rede e pela garantia de que esses dados cheguem ao seu destino final. Equivalente ao que é operacionalizado na camada de rede do modelo OSI, na arquitetura TCP/IP a camada de internet tem como embasamento os protocolos IP (Internet Protocol) e ICMP (Internet Control Message Protocol).</p>
+        </div>
+        <div id="linha-vertical"></div>
+        <div>
+            <h4>Rede</h4>
+            <p><strong>Esta é a camada de base da arquitetura TCP/IP, correspondente às camadas de enlace de dados e física do OSI, onde ocorre a conexão básica do host com a rede por meio de algum protocolo capaz de enviar pacotes IP. É por meio desta camada que é possível transmitir dados a outros computadores dentro de uma mesma rede física, além de realizar o envio do datagrama recebido pela camada de internet através de meios físicos.
+                Para se manter em funcionamento a camada de Interface de rede utiliza como principais protocolos: Etrernet para Redes Locais (LAN – Local Area Network) e PPP (Point-to-Point Protocol) para Redes de Longa Distância (WAN – Wide Area Network).</p>
+                <img id="TCP" src="./imgs/figuras/rede.png">
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+        <hr/>
+    <div>
+        <div class="vertical"></div>
+    <h3 align="center">Alguma coisa separando as secoes</h3>
+    <hr>
+    <h1 align="center">
+        <a name="secao3" align="center">Apresentação do grupo</a>
+    </h1>
+    <footer>
+        <p>
+        <section>
+            <ul>
+                <li>
+                    <img src="./imgs/figuras/avatarenzo.jpg" width="160">
+                    <p>
+                        Jamillypetala dos santos siqueira
+                    </p>
+                </li>
+                <li>
+                    <img src="./imgs/figuras/RM.jpeg" width="220">
+                    <p>
+                        Jose enzo almeida
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

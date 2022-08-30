@@ -30,7 +30,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: purple;
+        background-color: rgb(3, 156, 184);
         top: 0;
         left: 0;
         right: 0;
@@ -69,6 +69,7 @@
         margin: 0 auto;
     }
     .secaodisciplinas img{
+        border: solid;
         max-width: 200px;
         max-height: 200px;
         flex: 1 1 200px;
@@ -80,6 +81,7 @@
         margin-top: 20px;
     }
     .secaodisciplinas2 img{
+        border: solid;
         max-width: 200px;
         max-height: 200px;
         flex: 1 1 200px;
@@ -103,7 +105,25 @@
         width: auto;
         display: flex;
         justify-content: space-around;
-        margin-top: 50px;
+        margin-top: 60px;
+    }
+    .secaoprincipal{
+        height: auto;
+        padding: 10px;
+        width: auto;
+        margin-top: 300px;
+    }
+    .textoemcima{
+        width: 100%;
+        align-items: center;
+    }
+    .textoembaixo{
+        margin-top: 200px;
+        width: 100%;
+    }
+    .imgrodape{
+        max-width: 50px;
+        max-height: 50px;
     }
     </style>
 </head>
@@ -129,7 +149,7 @@
     <div>
         <h2 id="secao1">Quimica</h2>
     </div>
-    <div>
+    <div id="secaoprincipal">
         <div>
         <table class="secaodisciplinas">
             <tr>
@@ -142,6 +162,9 @@
                 
                     - O átomo que apresenta maior número de prótons exerce uma maior atração sobre seus elétrons.
                 </td>
+            </tr>
+        </table>
+        <table class="secaodisciplinas">
             <tr>
                 <td><img src="./imgs/figuras/energiadeionizacao.jpg">
                 <td>
@@ -164,6 +187,8 @@
                     É a energia liberada quando um átomo no estado gasoso (isolado) captura um elétron. Em uma família ou período, quanto menor o raio, maior a afinidade eletrônica.
                 </td>
             </tr>
+        </table>
+        <table class="secaodisciplinas2">
             <tr>
                 <td><img src="./imgs/figuras/eletronegatividade.jpg"></td>
                 <td>
@@ -179,8 +204,9 @@
     <hr>
         <h2 id="secao2">Arquiteturas de Redes</h2>
     <table class="">
+    <div>
         <div>
-        <tr>
+        <tr class="textoembaixo">
             <td><img src="./imgs/figuras/aplicação.png"></td>
             <td>
                 Aplicação
@@ -193,7 +219,11 @@
                 HTTP (Hypertext Transfer Protocol).
             </td>
         </tr>
-        <tr>
+        </div>
+    </table>
+    <table>
+        <div>
+        <tr class="textoemcima">
             <td><img src="./imgs/figuras/transporte.png"></td>
             <td>
                 Transporte
@@ -203,17 +233,20 @@
         </tr>
         </div>
     </table>
-    </div>
     <table class="">
         <div>
-        <tr>
+        <tr class="textoembaixo">
             <td><img src="./imgs/figuras/internet.png"></td>
             <td>
                 Internet
                 A camada de internet, também conhecida como inter-redes, é responsável pela permissão de envio de pacotes por hosts a qualquer rede e pela garantia de que esses dados cheguem ao seu destino final. Equivalente ao que é operacionalizado na camada de rede do modelo OSI, na arquitetura TCP/IP a camada de internet tem como embasamento os protocolos IP (Internet Protocol) e ICMP (Internet Control Message Protocol).
             </td>
         </tr>
-        <tr>
+        </div>
+    </table>
+    <table>
+        <div>
+        <tr class="textoemcima">
             <td><img src="./imgs/figuras/rede.png"></td>
             <td>
                 Interface de rede
@@ -232,11 +265,15 @@
     <div id="rodadapefinal">
         <table class="secaodisciplinas">
             <tr>
-                <td><img class="img" src="./imgs/figuras/avatarenzo.jpg"></td>
+                <td><img class="imgrodape" src="./imgs/figuras/avatarenzo.jpg"></td>
                 <td>JOSÉ ENZO COSTA ALMEIDA</td>
             </tr>
+        </table>
+    </div>
+    <div id="rodapefinal">
+        <table class="secaodisciplinas">
             <tr>
-                <td><img class="img" src="./imgs/figuras/RM.jpeg"></td>
+                <td><img class="imgrodape" src="./imgs/figuras/RM.jpeg"></td>
                 <td>JAMILLY PETALA DO SANTOS SIQUEIRA</td>
             </tr>
         </table>
