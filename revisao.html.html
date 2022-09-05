@@ -6,30 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riot Agentes/Champs</title>
     <style>
-
+        #cabecalho{
+            width: 100%;
+            height: 140px;
+            background-color: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+        }
+        #divisaocabecalho{
+            width: 200px;
+        }
+        #imgcabecalho{
+            width: 130px;
+            height: 130px;
+            padding: 5px;
+        }
+        #titulo{
+            font-size: 44px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        #menu{
+            width: 100%;
+            height: 30px;
+            background-color: white;
+            position: fixed;
+            top: 140px;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+        }
+        .secaodesc{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10px;
+        }
+        .linhaimpar,.colunaimpar{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .descricao{
+            padding: 5px;
+            max-width: 100px;
+            max-height: 100px;
+        }
+        .secaodescvertical{
+            flex-wrap: wrap;
+            align-items: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10px;
+            border-right: solid;
+        }
+        .fotoslol{
+            border: solid;
+            width: 300px;
+            height: 300px;
+        }
+        .titulosecoes{
+            background-color: white;
+            border: solid;
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            margin-top: 200px;
+        }
     </style>
 </head>
 <header>
-    <section id="cabeçalho">
+    <section id="cabecalho">
         <img id="imgcabecalho" src="./imgs/siteriot/logoriot.png" alt="Logomarca da Riot">
         <div id="divisaocabecalho"></div>
-        <p id="titulo">Riot Agentes/Champ</p>
+        <p id="titulo">RIOT AGENTES/CHAMPS</p>
     </section>
-    <section>
+    <section id="menu">
         <p><a href="#valorant">Valorant</a></p>
         <p><a href="#lol">League of Legends</a></p>
-        <p><a href="#criador">Creditos</a></p>
+        <p><a href="#creditos">Creditos</a></p>
     </section>
 </header>
 <main>
-<body>
+<body background="./imgs/siteriot/riotfundo.gif">
     <section id="primeirotopico">
         <h1 class="titulosecoes" id="valorant">Valorant</h1>
         <section class="linhaimpar">
-            <section class="secaoesc">
+            <section class="secaodesc">
                 <section>
                     <div>
-                        <img src="./imgs/siteriot/raze.png">
+                        <img class="fotoslol" src="./imgs/siteriot/raze.png">
                     </div>
                 </section>
                 <section class="descrição">
@@ -40,7 +116,7 @@
                 </section>
                 <section class="secaodesc">
                     <div>
-                        <img src="./imgs/siteriot/sova.png">
+                        <img class="fotoslol" src="./imgs/siteriot/sova.png">
                     </div>
                 </section>
                 <section class="descricao">
@@ -51,7 +127,7 @@
                 </section>
                 <section class="secaodesc">
                     <div>
-                        <img src="./imgs/siteriot/chamber.png">
+                        <img class="fotoslol" src="./imgs/siteriot/chamber.png">
                     </div>
                 </section>
                 <section class="descricao">
@@ -62,7 +138,7 @@
                 </section>
                 <section class="secaodesc">
                     <div>
-                        <img src="./imgs/siteriot/omen.png">
+                        <img class="fotoslol" src="./imgs/siteriot/omen.png">
                     </div>
                 </section>
                 <section class="descricao">
@@ -77,9 +153,79 @@
     <hr>
     <section id="segundotopico">
         <h1 class="titulosecoes" id="lol"> League of Legends</h1>
-
+        <section class="colunaimpar">
+            <section class="secaodescvertical">
+                <section>
+                    <div>
+                        <img class="fotoslol" src="./imgs/siteriot/yone.jpg">
+                    </div>
+                </section>
+                <section class="descricao">
+                    <div>
+                        <h2>Yone</h2>
+                        <p>Em vida, ele foi Yone; meio-irmão de Yasuo e um respeitado aluno da escola de espadachins de seu vilarejo. Mas, ao morrer pelas mãos do irmão, ele se viu perseguido por uma entidade maligna do reino espiritual e foi forçado a exterminá-la com sua própria espada. Agora, condenado a usar uma máscara demoníaca com o rosto da entidade, Yone busca incansavelmente essas criaturas para tentar entender o que ele mesmo se tornou.</p>
+                    </div>
+                </section>
+            </section>
+            <section class="secaodescvertical">
+                <section>
+                    <div>
+                        <img class="fotoslol" src="./imgs/siteriot/yasuo.jpg">
+                    </div>
+                </section>
+                <section class="descricao">
+                    <div>
+                        <h2>Yasuo</h2>
+                        <p>Yasuo, um ioniano extremamente determinado, é também um ágil espadachim que usa o próprio ar como arma para enfrentar seus inimigos. Quando jovem, ele teve seu orgulho ferido ao ser acusado injustamente do assassinato de seu mestre — sem conseguir provar sua inocência, ele foi forçado a matar o próprio irmão para se defender. Até hoje, mesmo depois do verdadeiro assassino do seu mestre ter sido revelado, Yasuo ainda não consegue se perdoar e vaga por sua terra natal com apenas o vento para guiar sua espada.</p>
+                    </div>
+                </section>
+            </section>
+            <section class="secaodescvertical">
+                <section>
+                    <div>
+                        <img class="fotoslol" src="./imgs/siteriot/viego.jpg">
+                    </div>
+                </section>
+                <section class="descricao">
+                    <div>
+                        <h2>Viego</h2>
+                        <p>Outrora regente de um reino perdido, Viego morreu há mais de um milênio, quando uma tentativa de trazer sua esposa de volta à vida culminou em uma catástrofe mágica conhecida como "a Ruína". Transformado em um poderoso espectro morto-vivo, e sempre sendo torturado pela paixão obsessiva que sente por sua rainha morta há séculos, Viego agora é conhecido como o Rei Destruído. Hoje, ele controla os Tormentos enquanto assola Runeterra em busca de qualquer coisa que possa trazê-la de volta, destruindo tudo que estiver em seu caminho conforme a Névoa Negra emana de seu cruel coração partido.</p>
+                    </div>
+                </section>
+            </section>
+            <section class="secaodescvertical">
+                <section>
+                    <div>
+                        <img class="fotoslol" src="./imgs/siteriot/volibear.jpg">
+                    </div>
+                </section>
+                <section class="descricao">
+                    <div>
+                        <h2>Volibear</h2>
+                        <p>Para aqueles que ainda o veneram, Volibear é a forma manifestada da tempestade. Destrutivo, selvagem e implacavelmente obstinado, ele já existia antes mesmo que os mortais andassem sobre a tundra de Freljord, protegendo as terras que ele e seus irmãos semideuses criaram. Com um ódio profundo pela civilização e pela fraqueza inerente a ela, Volibear luta para recuperar os velhos costumes de quando a terra era selvagem e o sangue jorrava livremente. Ele enfrenta todos aqueles que ousam entrar em seu caminho com dentes, garras e dominação estrondosa.</p>
+                    </div>
+                </section>
+            </section>
+        </section>
     </section>
-    
+    <hr>
+    <section id="creditos">
+        <h1 class="titulosecoes" id="dev">Dev e criador do site</h1>
+        <section class="linhaimpar">
+            <section class="secaodesc">
+                <section>
+                    <div>
+                        <img class="fotoslol" src="./imgs/siteriot/icondev.jpg">
+                    </div>
+                </section>
+                <section class="descricao">
+                    <div>
+                        <p>ZARZKINHO</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
 </body>
 </html>
 </main>
