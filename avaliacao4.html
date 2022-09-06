@@ -12,11 +12,12 @@
             top: 0;
             left: 0;
             display: flex;
-            align-items: left;
+            justify-content: end;
         }
         #titulo{
             font-size: 14px;
             font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
         }
         #menu{
             width: 100%;
@@ -40,13 +41,43 @@
         }
         .fotos{
             border: solid;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
         }
         .tituloparte{
+            color: white;
             text-align: center;
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
+        }
+         .secaodescvertical{
+            flex-wrap: wrap;
+            align-items: center;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        #parte1{
+            background-image: url(imagensprova/parte1/fundoparte1.jpg);
+        }
+        #parte2{
+            background-image: url(imagensprova/parte2/parte2fundo.jpg);
+        }
+        #parte3{
+            background-image: url(imagensprova/parte3/parte3fundo.jpg);
+        }
+        .botaoinicio{
+            text-align: right;
+        }
+        .desc1{
+            color: white;
+        }
+        .txt1{
+            color: white;
+        }
+        #explicacaoassunto{
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -57,7 +88,7 @@
 </header>
 <body>
     <section id="explicacaoassunto">
-        <p>O site trata de uma pequena apresentação de alguns personagens presentes nos jogos mais famoso da empresa Riot Games.</p>
+        <p>O site trata de uma pequena apresentação de alguns personagens presentes nos jogos mais famoso da empresa Riot Games. O intuito é apenas mostrar alguns personagens dos jogos da empresa para que o leitor se interesse pelos jogos se indentificando com a história de algum personagem.Todos sabemos que fica assim mais fácil jogar quando você gosta tanto daquele personagem, e ainda mais quando ele se parece com você. Aqui estão 3 personagens muito jogados do jogo Valorant, e 4 bastante jogados também do jogo League of Legends. Aproveite algumas descrições deles, e curta o site.</p>
     </section>
     <hr>
     <section id="menu">
@@ -69,72 +100,78 @@
     <section id="parte1">
         <h1 class="tituloparte" id="apresentacao">Apresentação do Dev</h1>
         <section class="linhaimpar">
-            <section class="sessaodesc">
+            <section class="secaodescvertical">
                 <section>
                     <div>
                         <img class="fotos" src="./imagensprova/parte1/icondev.jpg">
                     </div>
                 </section>
-                <section class="desc1">
+                <section class="txt1">
                     <div>
-                        <p> bla bla bla</p>
+                        <p>A parte 1 se refere ao Dev desse site. Oi, me chamo Enzo e sou aluno do campus de Parnamirim cursando informática, sou meio atrapalhado em diversar máterias presentes na minha grande curricular. Estou aqui tentando pelo menos ganhar uma nota na disciplina de Autoria Web. Não sei muito bem ainda desenvolver um site, mas prometo que eu ainda to tentando. Talvez esse site não entregue o que se pede, talvez eu não deveria está escrevendo isso nesse tópico, mas pelo menos eu to tentando, e acho que isso é um dos fatores importantes para se tornar um futuro DEV. Tentando, errando, e as vezes, acertando.</p>
                     </div>
                 </section>
-                <section id="txt1">
+                <section class="desc1">
                     <div>
-                        <p> BLA BLA BLA BLA</p>
+                        <p>Esse era para ser eu</p>
                     </div>
-                </section>>
-                <p><a href="#explicacaoassunto">Inicio</a></p>
+                </section>
             </section>
         </section>
     </section>
+    <p class="botaoinicio"><a href="#explicacaoassunto">Inicio</a></p>
     <section id="parte2">
         <h1 class="tituloparte" id="valorant">Valorant</h1>
         <section class="linhaimpar">
-            <section class="sessaodesc">
-                <section>
+            <section class="secaodescvertical">
+                <section class="txt1">
                     <div>
-                        <p>BLA BLA BLA</p>
+                        <p>Essa parte se refere aos agentes do jogo valorant, onde possuem habilidades diferentes e possuem funções especificas, cada mapa do jogo necessita de personagens que melhor se adapta aquela situação. Abaixo podemos ver 3 personagens de classses difrentes, que podem movimentar o jogo dependendo da situação que se encontra</p>
                     </div>
                 </section>
-                <section>
+                <section class="sessaodescvertical">
                     <div>
                         <img class="fotos" src="./imagensprova/parte2/sova.png">
                     </div>
+                </section>
+                <section class="desc1">
                     <div>
                         <p>Nascido sob o eterno inverno das tundras russas, Sova rastreia, encontra e elimina inimigos com eficiência e precisão implacáveis. Seu arco personalizado e suas habilidades inigualáveis de reconhecimento garantem que nenhuma presa escape.</p>
                     </div>
                 </section>
-                <section>
+                <section class="sessaodescvertical">
                     <div>
                         <img class="fotos" src="./imagensprova/parte2/raze.png">
                     </div>
                 </section>
-                <section id="txt1">
+                <section class="desc1">
                     <div>
                         <p>Raze chega do Brasil em uma explosão de carisma e armas letais. Com seu estilo de jogo "porradeiro", ela é craque em desentocar inimigos entrincheirados e limpar espaços apertados com uma bela dose de BUUUM!</p>
                     </div>
                 </section>
-                <section>
+                <section class="sessaodescvertical">
                     <div>
                         <img class="fotos" src="./imagensprova/parte2/omen.png">
                     </div>
                 </section>
-                <section>
+                <section class="desc1">
                     <div>
                         <p>Omen, uma lembrança fantasmagórica, caça nas sombras. Ele cega os inimigos, teleporta-se pelo campo e deixa a paranoia assumir o controle enquanto o adversário tenta descobrir de onde virá seu próximo ataque.</p>
                     </div>
                 </section>
-                <p><a href="#explicacaoassunto">Inicio</a></p>
             </section>
         </section>
     </section>
+    <p a class="botaoinicio"><a href="#explicacaoassunto">Inicio</a></p>
     <section id="parte3">
         <h1 class="tituloparte" id="lol">League of Legends</h1>
         <section class="linhaimpar">
-            <section class="sessaodesc">
-                <section>
+                <section class="txt1">
+                    <div>
+                        <p>Nessa parte, separei 4 personagens do jogo league of legends também com classes diferentes. O league of legends é um moba, logo possui mecanicas diferentes do jogo ja citado antes, o Valorant. As 3 posições presentes no site estão alguns dos mais fortes para aquele objetivo.</p>
+                    </div>
+                </section>
+                <section class="sessaodescvertical">
                     <div>
                         <img class="fotos" src="./imagensprova/parte3/viego.jpg">
                     </div>
@@ -144,39 +181,39 @@
                         <p>Outrora regente de um reino perdido, Viego morreu há mais de um milênio, quando uma tentativa de trazer sua esposa de volta à vida culminou em uma catástrofe mágica conhecida como "a Ruína". Transformado em um poderoso espectro morto-vivo, e sempre sendo torturado pela paixão obsessiva que sente por sua rainha morta há séculos, Viego agora é conhecido como o Rei Destruído. Hoje, ele controla os Tormentos enquanto assola Runeterra em busca de qualquer coisa que possa trazê-la de volta, destruindo tudo que estiver em seu caminho conforme a Névoa Negra emana de seu cruel coração partido.</p>
                     </div>
                 </section>
-                <section>
+                <section class="sessaodescvertical">
                     <div>
                         <img class="fotos" src="./imagensprova/parte3/volibear.jpg">
                     </div>
                 </section>
-                <section id="txt1">
+                <section class="desc1">
                     <div>
                         <p>Para aqueles que ainda o veneram, Volibear é a forma manifestada da tempestade. Destrutivo, selvagem e implacavelmente obstinado, ele já existia antes mesmo que os mortais andassem sobre a tundra de Freljord, protegendo as terras que ele e seus irmãos semideuses criaram. Com um ódio profundo pela civilização e pela fraqueza inerente a ela, Volibear luta para recuperar os velhos costumes de quando a terra era selvagem e o sangue jorrava livremente. Ele enfrenta todos aqueles que ousam entrar em seu caminho com dentes, garras e dominação estrondosa.</p>
                     </div>
                 </section>
-                <section>
+                <section class="sessaodescvertical">
                     <div>
                         <img class="fotos" src="./imagensprova/parte3/yasuo.jpg">
                     </div>
                 </section>
-                <section>
+                <section class="desc1">
                     <div>
                         <p>Yasuo, um ioniano extremamente determinado, é também um ágil espadachim que usa o próprio ar como arma para enfrentar seus inimigos. Quando jovem, ele teve seu orgulho ferido ao ser acusado injustamente do assassinato de seu mestre — sem conseguir provar sua inocência, ele foi forçado a matar o próprio irmão para se defender. Até hoje, mesmo depois do verdadeiro assassino do seu mestre ter sido revelado, Yasuo ainda não consegue se perdoar e vaga por sua terra natal com apenas o vento para guiar sua espada.</p>
                     </div>
                 </section>
-                <section>
+                <section class="sessaodescvertical">
                     <div>
                         <img class="fotos" src="./imagensprova/parte3/yone.jpg">
                     </div>
                 </section>
-                <section>
+                <section class="desc1">
                     <div>
                         <p>Em vida, ele foi Yone; meio-irmão de Yasuo e um respeitado aluno da escola de espadachins de seu vilarejo. Mas, ao morrer pelas mãos do irmão, ele se viu perseguido por uma entidade maligna do reino espiritual e foi forçado a exterminá-la com sua própria espada. Agora, condenado a usar uma máscara demoníaca com o rosto da entidade, Yone busca incansavelmente essas criaturas para tentar entender o que ele mesmo se tornou.</p>
                     </div>
                 </section>
-                    <p><a href="#explicacaoassunto">Inicio</a></p>
             </section>
         </section>
     </section>
+    <p class="botaoinicio"><a href="#explicacaoassunto">Inicio</a></p>
 </body>
 </html>
