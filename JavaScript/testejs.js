@@ -8,5 +8,8 @@ function exibir_janela_alerta()
     } else {
         window.alert("Digita o texto animal!!")
     }
-
+}
+function exibir_num_objbody()
+{
+    var name = window.prompt ("Digite seu nome")
 }
