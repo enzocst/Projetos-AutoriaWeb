@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste JS</title>
-    <script type="text/javascript">
-        document.writeln("<h1>Bem vindo à programação com JS</h1>");
-    </script>
-    <style>
-        h1{
-            font-family: Arial, Helvetica, sans-serif;
-            color: chocolate;
-        }
-    </style>
+    <script type="text/javascript" src="testejs.js"></script>
 </head>
 <body>
-    
+    <h2>Exibindo uma janela de alerta</h2>
+    <p>
+        <input type="button" onclick="exibir_janela_alerta()" value="Clique aqui amigão"/>
+    </p>
+    <hr>
+    <h2>Exibindo num objeto no body</h2>
+    <p>
+        <input type="button" onclick="exibir_num_objbody()" value="Clique aqui, fera."/>
+    </p>
+    <div id="divexibirnome">
+        O nome digitado deve aparecer aqui
+    </div>
 </body>
 </html>
