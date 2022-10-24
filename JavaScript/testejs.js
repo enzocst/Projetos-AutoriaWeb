@@ -11,5 +11,9 @@ function exibir_janela_alerta()
 }
 function exibir_num_objbody()
 {
-    var name = window.prompt ("Digite seu nome")
+    var name = window.prompt ("Por favor digite seu nome aqui primeiro", "<Seu nome aqui>");
+    if (name != null && name != "")
+    {
+    divexibirnome.innerHTML = string("Olá" + name + "! Tudo bem?");
+    }
 }
