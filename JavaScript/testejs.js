@@ -17,7 +17,6 @@ function exibir_num_objbody()
     divexibirnome.innerHTML = string("Olá" + name + "! Tudo bem?");
     }
 }
-<<<<<<< HEAD
 function somar()
 {
     var numero1 = parseInt(window.prompt ("Digite um numero"));
@@ -26,5 +25,3 @@ function somar()
     divexibirnome.innerHTML = string(resultado);
 
 }
-=======
->>>>>>> fd12a57c73b1a98702063354b7e1bbdaf8e0a831
