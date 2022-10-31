@@ -14,7 +14,7 @@ function exibir_num_objbody()
     var name = window.prompt ("Por favor digite seu nome aqui primeiro", "<Seu nome aqui>");
     if (name != null && name != "");
     {
-    divexibirnome.innerHTML = string("Olá" + name + "! Tudo bem?");
+    divexibirnome.innerHTML = String("Olá" + name + "! Tudo bem?");
     }
 }
 function somar(){
@@ -72,4 +72,25 @@ function dividir(){
     }
     var resultado = numero1 / numero2;
     divexibirresultadodiv.innerHTML = String(resultado);
+}
+function validaridade(){
+    var idade = parseInt(window.prompt("Informe a idade da pessoa"));
+    if (idade > 0 && idade >= 120) {
+        window.alert("A idade é válida")
+    } 
+    else {
+        window.alert("A idade não é válida");
+    }
+    var altura = parseFloat(window.prompt("Informe a altura da pessoa"))
+    if (altura >= 1.20 && altura <= 2.30) {
+        window.alert("A altura é válida")
+    }
+    else {
+        window.alert("A altura não é válida");
+    }
+    divexibirresultadovalida.innerHTML = String(resultado);
+}
+function validarvalores(){
+    var opcao = window.prompt("Validar: Idade - I; Altura - H; Idade e altura - T")
+    validaridade(Option);
 }
