@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodando o Javascript</title>
     <script>
+        var contapessoas = 0;
         function gravar(){
             var nomepessoa = "";
             var idadepessoa = 0;
             nomepessoa = document.getElementById("nome").value;
             idadepessoa = document.getElementById("idade").value;
             divinfogravadas.innerHTML = `${nomepessoa + " tem " + idadepessoa + " anos"}`;
+            contapessoas = contapessoas + 1;
+            divcontapessoas.innerHTML = `${contapessoas + " Pessoas foram contabilizadas"}`;{
             document.getElementById('nome').value=''
             document.getElementById('idade').value=''
             document.getElementById('msg').value=''
@@ -34,6 +37,7 @@
         <textarea id="msg" name="usuario_msg"></textarea>
         <p><button id="botao" type="submit" onclick="gravar()">Cadastrar</button></p>
         <div id="divinfogravadas">-</div>
+        <div id="divcontapessoas">-</div>
     </form>
 </body>
 </html>
