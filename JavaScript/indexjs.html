@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodando o Javascript</title>
+    <script>
+        function gravar(){
+            var nomepessoa = "";
+            var idadepessoa = 0;
+            nomepessoa = document.getElementById("nome").value;
+            idadepessoa = document.getElementById("idade").value;
+            divinfogravadas.innerHTML = `${nomepessoa + " tem " + idadepessoa + " anos"}`;
+            document.getElementById('nome').value=''
+            document.getElementById('idade').value=''
+            document.getElementById('msg').value=''
+            document.getElementById('nome').focus();
+        }
+    </script>
+
+</head>
+<body>
+    <form action="/pagina-processa-dados-do-form" method="post">
+     <h2>Usando inputs para preencher variáveis</h2>
+    <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="usuario_nome" />
+
+        <label>Idade: 
+            <input type="number" name="idade" id="idade">
+        </label>
+   
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg" name="usuario_msg"></textarea>
+        <p><button id="botao" type="submit" onclick="gravar()">Cadastrar</button></p>
+        <div id="divinfogravadas">-</div>
+    </form>
+</body>
+</html>
