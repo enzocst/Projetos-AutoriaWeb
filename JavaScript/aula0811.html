@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-
-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodando o Javascript</title>
     <script type="text/javascript" src="aula8011.js"></script>
-
 </head>
 <body>
     <form action="/pagina-processa-dados-do-form" method="post">
     <h2> Aula 08/11</h2>
         <label for="produto">Nome do Produto:</label>
-        <input type="text" id="produto"/>
+        <input type="text" id="produto" placeholder="Digite o nome do produto"/>
         <label for="preco">Preço do Produto:</label>
-        <input type="number" id="preco"/>
-        <p><button id="botao" type="submit"
-onclick="cadastrarproduto()">Cadastrar Produto e Calcular</button></p>
+        <input type="number" id="preco" placeholder="Digite o preço do produto"/>
+        <p><button id="botao" type="submit" onclick="cadastrarproduto()">Cadastrar Produto e Calcular</button></p>
         <div id="divinfoprodutos">-</div>
         <div id="divinfototalprodutos">-</div>
     </form>
