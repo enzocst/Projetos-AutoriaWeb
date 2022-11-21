@@ -93,4 +93,4 @@ function validaridade(){
 function validarvalores(){
     var opcao = window.prompt("Validar: Idade - I; Altura - H; Idade e altura - T")
     validaridade(Option);
-}.
+}
