@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <script>
+        var cadastro = [];
+        var posicaocadastro = 0
         function cadastrar(){
-
+            var nome = document.getElementById("nomecad").value;
+            var idade = document.getElementById("idadecad").value;
+            listadepessoas.innerHTML = listadepessoas.innerHTML + cadastro[posicaocadastro] + "<br>";
+            qtdpessoas.innerHTML =  String(qtdpessoas) + "<br>" 
+                posicaocadastro++;
         }
     </script>
 </head>
 <body>
     <h1>TELA DE CADASTRO</h1>
     <label>NOME</label>
-    <input type="text" id="nome" placeholder="digite seu nome completo">
+    <input type="text" id="nomecad" placeholder="digite seu nome completo">
     <br>
     <label>IDADE</label>
-    <input type="number"  id="idade" placeholder="digite sua idade">
+    <input type="number"  id="idadecad" placeholder="digite sua idade">
     <p><button type="submit" id="cadastrar" onclick="cadastrar()">CADASTRAR</button></p>
+    <h3>Pessoas cadastradas</h3>
+        <div id="listadepessoas">-</div>
+    <h3>Total de pessoas cadastradas</h3>
+        <div id="qtdpessoas">-</div>
 </body>
 </html>
