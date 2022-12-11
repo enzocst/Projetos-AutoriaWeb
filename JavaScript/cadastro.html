@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <script>
-        var cadastro = [];
-        var posicaocadastro = 0
+        var cadastro = 0
         function cadastrar(){
             var nome = document.getElementById("nomecad").value;
             var idade = document.getElementById("idadecad").value;
-            listadepessoas.innerHTML = listadepessoas.innerHTML + cadastro[posicaocadastro] + "<br>";
-            qtdpessoas.innerHTML =  String(qtdpessoas) + "<br>" 
-                posicaocadastro++;
+            if{
+                cadastro = cadastro + parseFloat(nome)
+                listadepessoas.innerHTML = listadepessoas.innerHTML + cadastro + "<br>";
+                qtdpessoas.innerHTML =  String(cadastro) + "<br>" 
+            
+            
+
+            }
+            document.getElementById('nomepessoa').value='';
+            document.getElementById('idadepessoa').value='';
+            document.getElementById('nomepessoa').focus();
         }
     </script>
 </head>
