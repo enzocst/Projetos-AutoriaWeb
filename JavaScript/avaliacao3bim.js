@@ -6,7 +6,7 @@ function analisar(){
     var nomecadidato = ""; 
     var notacandidato = 0; 
     notaminimacandidato = document.getElementById("notaminina").value;
-    nomecandidato = document.getElementById("candidato").value;
+    nomecadidato = document.getElementById("candidato").value;
     notacandidato = document.getElementById("nota").value;
 
     if (notaminimacandidato == "" || notaminimacandidato <= 0 || notaminimacandidato < 60){
