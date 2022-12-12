@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #instrucoes{
+            display: flex;
+            background-color: mediumseagreen;
+        }
+        .sectiondiv{
+            background-color: aqua;
+        }
+    </style>
+    <title>Avaliação 3º Bimestre - INFO 3B</title>
+    <script type="text/javascript" src="avaliacao3bim.js"></script>
+</head>
+<body>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <h2> Provinha para dar tudo certo - SEU NOME</h2>
+        <h3>Prometo que o resultado não vai demorar tanto</h3>
+        <hr>
+        <p>Criar um algoritmo em Javacript que, ao clicar no botão "Analisar Situação do(a) Candidato(a)", o software analise e calcule os valores, de acordo com os seguintes requisitos:</p>
+        <section id="instrucoes">
+            <ul>
+                <li>A nota mínima informada não pode ser negativa - <strong>0.5 ponto</strong></li>
+                <li>O campo da nota mínima não pode ficar vazio - <strong>0.5 ponto</strong></li>
+                <li>O campo do nome do(a) candidato(a) não pode estar vazio - <strong>0.5 ponto</strong></li>
+                <li>A nota do concurso do(a) canidato(a) não pode ser negativa e não campo não pode estar vazio - <strong>0.5 ponto</strong></li>
+            </ul>
+            <ol>
+                <li>Contar a quantidade de candidatos(as) que estão aprovados(as) - <strong>0.5 ponto</strong></li>
+                <li>Contar a quantidade de candidatos(as) que obtiveram nota 0 no concurso - <strong>0.5 ponto</strong></li>
+                <li>Contar a quantidade de candidatos(as) que tiveram suas situações analisadas pelo software - <strong>0.5 ponto</strong></li>
+            </ol> 
+        </section>
+        <p>OBS: A pontuação só voga se os resultados estiverem aparecendo corretamente nos locais determinados abaixo</p>
+        <hr>
+        <h2>Informações do concurso</h2>
+        <ul>
+            <li>Aqui deve ser informada a nota mínima que cada candidato(a) deve atingir para aprovação no concurso</li>
+        </ul>
+        <label for="notaminima">Nota mínima para ser aprovado(a):</label>
+        <input type="number" id="notaminima"/>
+        <hr>
+        <h2>Informações do(a) Candidato(a)</h2>
+        <label for="candidato">Nome do(a) Candidato(a):</label>
+        <input type="text" id="candidato"/>
+        <label for="nota">Nota do concurso:</label>
+        <input type="number" id="nota"/>
+        <p><button id="botao" type="submit" onclick="analisar()">Analisar Situação do(a) Candidato(a)</button></p>
+
+        <hr>
+        <section class="sectiondiv">
+            <ul>
+                <li>Mostrar no HTML a quantidade de candidatos(as) que conseguiram nota igual ou acima da nota mínima para aprovação - <strong>0.5 ponto</strong></li>
+            </ul>
+            <h3>1 - Quantidade de cadidatos(as) aprovado(as)</h3>
+            <div id="aprovados">0</div>
+        </section>
+        <hr>
+        <section class="sectiondiv">
+            <ul>
+                <li>Mostrar no HTML a quantidade de candidatos(as) que obtiveram nota 0 - <strong>0.5 ponto</strong></li>
+            </ul>
+            <h3>2 - Quantidade de cadidatos(as) que tiraram nota 0 </h3>
+            <div id="nota">0</div>
+        </section>
+        <hr>
+        <section class="sectiondiv">
+            <ul>
+                <li>Mostrar no HTML a quantidade de candidatos(as) que tiveram as situações das suas notas analisadas pelo software - <strong>0.5 ponto</strong></li>
+            </ul>
+            <h3>3 - Quantidade de candidatos(as) que tiveram as situações analisadas</h3>
+            <div id="analisados">0</div>
+        </section>
+        </form>
+</body>
+</html>
