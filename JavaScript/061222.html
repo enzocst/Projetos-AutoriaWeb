@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operando com laço de repetição</title>
+    <script>
+        var cadastro = [];
+        var posicaocadastro = 0, qtdmaiores = 0, qtdmenores = 0;
+        function cadastrar(){
+            var nome = document.getElementById("nomepessoa").value;
+            var idade = document.getElementById("idadepessoa").value;
+            if (parseInt(idade) > 0 && parseInt(idade) <=120){
+                if (parseInt(idade)>= 18){
+                    qtdmaiores++
+                } else {
+                    qtdmenores++;
+                }
+                cadastro[posicaocadastro] = nome + ", " + idade;
+                ultimapessoa.innerHTML = "Nome: " + String(nome) + " Idade: " + String(idade);
+                listadepessoas.innerHTML = listadepessoas.innerHTML + cadastro[posicaocadastro] + "<br>";
+                qtdpessoas.innerHTML = "Quantidade de pessoas maiores: " + String(qtdmaiores) + "<br>" 
+                                    +"Quantidade de pessoas menores: " + String(qtdmenores)
+                posicaocadastro++;
+            } else {
+                window.alert("A idade não voga")
+            }
+            document.getElementById('nomepessoa').value='';
+            document.getElementById('idadepessoa').value='';
+            document.getElementById('nomepessoa').focus();
+        }
+    </script>
+</head>
+<body>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <h2>Operando com laço de repetição</h2>
+        <h2>Versão I - Tomara que dê certo</h2>
+        <h3>Nessa versão, cada pessoa cadastrada é mostrada no HTML no mesmo momento do cadastro</h3>
+        <label for="nomepessoa">Nome da pessoa:</label>
+        <input type="text" id="nomepessoa"/>
+        <label for="idadepessoa">Idade da pessoa:</label>
+        <input type="number" id="idadepessoa"/>
+        <p><button id="botao" type="submit" onclick="cadastrar()">Cadastrar pessoa</button></p>
+        <h3>Última pessoa cadastrada</h3>
+            <div id="ultimapessoa">-</div>
+        <h3>Lista das pessoas cadastradas - vetor</h3>
+            <div id="listadepessoas">-</div>
+        <h3>Quantidade de pessoas cadastradas</h3>
+            <div id="qtdpessoas">-</div>
+        <hr>
+    </form>
+</body>
+</html>
