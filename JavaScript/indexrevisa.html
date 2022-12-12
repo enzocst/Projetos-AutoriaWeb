@@ -15,30 +15,32 @@
     </style>
     <title>Avaliação 3º Bimestre - INFO 3A</title>
     <script>
-        var totalpreco, totalprodutos, totalprodutosnao;
+        var totalpreco = 0, totalprodutos = 0, totalprodutosnao = 0;
         function cadastrarproduto(){
-            var nomeproduto = document.getElementById("produto").value;
-            var precoproduto = document.getElementById("preco").value;
+            var nomeproduto = "";
+            var precoproduto = 0;
+            nomeproduto = document.getElementById("produto").value;
+            precoproduto = document.getElementById("preco").value;
             if (nomeproduto == ""){
-                window.alert = ("Nome do produto está invalido");
+                window.alert("Nome do produto está invalido");
                 document.getElementById("produto").value="";
-                totalprodutosnao++;
-                naoatendemreq.innerHTML = totalprodutosnao;
+                totalprodutosnao = totalprodutosnao + 1;
+                naoatendemreq.innerHTML = String(totalprodutosnao);
             }
-            else if(parseInt(precoproduto) == "" || parseInt(precoproduto) <= 0){
+            else if(precoproduto == "" || precoproduto <= 0){
                 window.alert("Digite um valor valido para o preço");
                 document.getElementById("preco").value="";
-                totalprodutosnao++;
-                naoatendemreq.innerHTML = totalprodutosnao;
+                totalprodutosnao = totalprodutosnao + 1;
+                naoatendemreq.innerHTML = String(totalprodutosnao);
             } 
-            else{
-                totalpreco = totalpreco + parseFloat(precoproduto)
-                resultado.innerhtml = R$${(totalpreco)};
+            else {
+                totalprodutos = totalprodutos + 1;
+                totalpreco = totalpreco + parseFloat(precoproduto);
+                resultado.innerHTML = String(totalpreco);
+                atendemreq.innerHTML = String(totalprodutos);
                 document.getElementById('produto').value='';
                 document.getElementById('preco').value='';
                 document.getElementById('produto').focus();
-                totalprodutos++;
-                atendemreq.innerHTML = totalprodutos;
             }
         }
     </script>
