@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        var
         function cadastrar(){
             var nome = document.getElementById("nome").value;
             var rua = document.getElementById("rua").value;
@@ -30,6 +31,9 @@
             } else if(complemento = ""){
                 window.alert ("O nome está inválido");   
             }
+            if(){
+
+            }
         }
     </script>
 </head>
@@ -50,7 +54,35 @@
         <label>CIDADE:</label>
         <input type="text" id="cidade">
         <label>UF:</label>
-        <input type="text" id="estado">
+        <select id="ufselection">
+            <option value="acre">AC</option>
+            <option value="alagoas">AL</option>
+            <option value="amapa">AP</option>
+            <option value="amazonas">AM</option>
+            <option value="bahia">BA</option>
+            <option value="ceara">CE</option>
+            <option value="distrito_federal">DF</option>
+            <option value="espirito_santo">ES</option>
+            <option value="goias">GO</option>
+            <option value="maranhao">MA</option>
+            <option value="mato_grosso">MT</option>
+            <option value="mato_grosso_do_sul">MS</option>
+            <option value="minas_gerais">MG</option>
+            <option value="para">PA</option>
+            <option value="paraiba">PB</option>
+            <option value="parana">PR</option>
+            <option value="pernambuco">PE</option>
+            <option value="piaui">PI</option>
+            <option value="rio_de_janeiro">RJ</option>
+            <option value="rio_grande_do_norte">RN</option>
+            <option value="rio_grande_do_sul">RS</option>
+            <option value="rondonia">RO</option>
+            <option value="roraima">RR</option>
+            <option value="santa_catarina">SC</option>
+            <option value="sao_paulo">SP</option>
+            <option value="sergipe">SE</option>
+            <option value="tocantins">TO</option>
+        </select>
         <label>COMPLEMENTO:</label>
         <input type="text" id="complemento">
         <button type="submit" id="enviarinfo" onclick="cadastrar()">CADASTRAR</button>
