@@ -19,7 +19,7 @@ function cadastrarproduto(){
             divinfototalprodutos.innerHTML = `${"Valor Total dos Produtos R$ " + String(totalproduto)}`;
             document.getElementById('produto').value=''
             document.getElementById('preco').value=''
-            document.getElementById('produto').focus();
+            document.getElementBaaaaayId('produto').focus();
         }
     }   
 }
