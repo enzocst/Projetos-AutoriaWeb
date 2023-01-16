@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo usando loop - Laço de repetição</title>
+    <script>
+        var arrei = [];
+        var i = 0;
+        function inserir(){
+            var texto = document.getElementById("caixadetexto").value;
+            arrei[i] = texto;
+            window.alert(String(arrei[i]));
+            i++;
+            document.getElementById('caixadetexto').value='';
+            document.getElementById('caixadetexto').focus();
+        }
+        function mostrarcomwhile(){
+            var j = 0;
+            while(j <= (i - 1)){
+                conteudoarraycomwhile.innerHTML = conteudoarraycomwhile.innerHTML + String(arrei[j]) + "<br>";
+                j++;
+            }
+        }
+        function mostrarcomfor(){
+            for (x = 0; x <= (i - 1); x++){
+                conteudoarraycomfor.innerHTML = conteudoarraycomfor.innerHTML + String(arrei[x]) + "<br>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="/pagina-processa-dados-do-form" method="post">
+    <h1>Exemplo implementando loop - Laço de repetição</h1>
+    <h2>Primeiro Exemplo - While</h2>
+    <p> Aqui o laço de repetição é implementado usando a instrução while</p>
+    <p> O exemplo vai inserir informação em um array e mostrar </p>
+    <input type="text" id="caixadetexto">
+    <button id="botao1" type="submit" onclick="inserir()">Clique para inserir no Array</button> 
+    <hr>
+    <p>Mostrar as informações inseridas no Array - Usando while</p>
+    <button id="botao2" type="submit" onclick="mostrarcomwhile()">Clique para mostrar o conteúdo do Array</button> 
+    <div id="conteudoarraycomwhile"></div>
+    <hr>
+    <p>Mostrar as informações inseridas no Array - Usando For</p>
+    <button id="botao2" type="submit" onclick="mostrarcomfor()">Clique para mostrar o conteúdo do Array</button> 
+    <div id="conteudoarraycomfor"></div>
+    <hr>
+    </form>
+</body>
+</html>
