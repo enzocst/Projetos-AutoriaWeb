@@ -7,7 +7,7 @@
     <title>Atividade</title>
     <script>
         var dataano = [];
-
+        var a = 0;
         function verificar(){
             var ano = document.getElementById('anofilme').value;
             dataano[a] = texto;
@@ -17,14 +17,10 @@
             document.getElementById('anofilme').focus();
         }
         function resultado1(){
-            var f12
-             = 0;
-            while(f12
-             >= 2008){
-                resultado1.innerHTML = resultado1.innerHTML + String(dataano[f12
-            ]) + "<br>";
-                f12
-                ++;
+            var f12 = 0;
+            while(f12 >= 2008){
+                resultado1.innerHTML = resultado1.innerHTML + String(dataano[f12]) + "<br>";
+                f12++;
             }
 
         }
