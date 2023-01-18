@@ -1,55 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade</title>
-    <script>
-        var dataano = [];
-        var a = 0;
-        function verificar(){
-            var ano = document.getElementById('anofilme').value;
-            dataano[a] = texto;
-            window.alert(String(dataano[a]));
-            a++;
-            document.getElementById('anofilme').value='';
-            document.getElementById('anofilme').focus();
-        }
-        function resultado1(){
-            var f12 = 0;
-            while(f12 >= 2008){
-                resultado1.innerHTML = resultado1.innerHTML + String(dataano[f12]) + "<br>";
-                f12++;
-            }
-
-        }
-        function resultado2(){
-
-        }
-    </script>
+    <script type="text/javascript" src="atividade.js"></script>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
+
 <body>
-    <form>
-        <h1>Verificação da fase da Marvel do UCM</h1>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <h1>Verificador das fases marvel pelo ano</h1>
         <p>Digite o ano do filme para verificar em que fase ele se situa</p>
         <label>Ano do filme</label>
-        <input type="text" id="anofilme">
+        <input type="number" id="anofilme" placeholder="digite aqui um ano valido">
         <button id="botao1" type="submit" onclick="verificar()">Verificar fase</button>
         <hr>
-        <h3>Fase 1 ou 2</h3>
-        <button id="botao2" type="submit" onclick="resultado1()">Ver ano dos filmes da fase 1 ou 2</button>
+        <h3>Filmes pertencentes a fase 1</h3>
+        <button id="botao2" type="submit" onclick="resultado1()">realizar consulta</button>
         <div id="conteudo1"></div>
         <hr>
-        <h3>Fase 3 ou 4</h3>
-        <button id="botao3" type="submit" onclick="resultado2()">Ver ano dos filmes da fase 3 ou 4</button>
-        <div id="conteudo 2"></div>
+        <h3>Filmes pertencentes a fase 2</h3>
+        <button id="botao3" type="submit" onclick="resultado2()">realizar consulta</button>
+        <div id="conteudo2"></div>
+        <hr>
+        <h3>Filmes pertencentes a fase 3</h3>
+        <button id="botao4" type="submit" onclick="resultado3()">realizar consulta</button>
+        <div id="conteudo3"></div>
+        <hr>
+        <h3>Filmes pertencentes a fase 4</h3>
+        <button id="botao5" type="submit" onclick="resultado4()">realizar consulta</button>
+        <div id="conteudo4"></div>
         <hr>
     </form>
 </body>
+
 </html>
