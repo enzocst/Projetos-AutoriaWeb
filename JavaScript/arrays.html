@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Arrays</title>
+    <script>
+        var arrayfruta = [];
+        var arraylegume = [];
+        var arrayverdura = [];
+        var f = 0;
+        var l = 0;
+        var v = 0;
+        function cadastrar() {
+            var tipo = document.getElementById("tipo").value;
+            var texto = document.getElementById("nomeproduto").value;
+            if (texto == '') {
+                window.alert("Insira o nome do produto")
+            }
+            else {
+                if (tipo == "Fruta") {
+                    arrayfruta[f] = texto;
+                    f++;
+                    document.getElementById('nomeproduto').value = '';
+                    document.getElementById('tipo').value = '--';
+                    document.getElementById('nomeproduto').focus();
+                }
+                else if (tipo == "Legume") {
+                    arraylegume[l] = texto;
+                    l++;
+                    document.getElementById('nomeproduto').value = '';
+                    document.getElementById('tipo').value = '--';
+                    document.getElementById('nomeproduto').focus();
+                }
+                else if (tipo == "Verdura") {
+                    arrayverdura[v] = texto;
+                    v++;
+                    document.getElementById('nomeproduto').value = '';
+                    document.getElementById('tipo').value = '--';
+                    document.getElementById('nomeproduto').focus();
+                }
+                else {
+                    window.alert("Insira um tipo de produto")
+                }
+            }
+        }
+        function mostrarfruta() {
+            divfruta.innerHTML = '';
+            var x = 0;
+            while (x <= (f - 1)) {
+                divfruta.innerHTML = divfruta.innerHTML + String(arrayfruta[x]) + "<br>";
+                x++;
+            }
+        }
+        function mostrarlegume() {
+            divlegume.innerHTML = '';
+            var y = 0;
+            while (y <= (l - 1)) {
+                divlegume.innerHTML = divlegume.innerHTML + String(arraylegume[y]) + "<br>";
+                y++;
+            }
+        }
+        function mostrarverdura() {
+            divverdura.innerHTML = '';
+            var z = 0;
+            while (z <= (v - 1)) {
+                divverdura.innerHTML = divverdura.innerHTML + String(arrayverdura[z]) + "<br>";
+                z++;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Utilização de Arrays</h1>
+    <h2>Cadastro de Produto</h2>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <label for="produto">Produto:</label>
+        <input type="text" id="nomeproduto">
+        <br> <br>
+        <label for="tipo">Tipo do Produto:</label>
+        <select name="tipo" id="tipo">
+            <option value="--" selected>--</option>
+            <option value="Fruta">Fruta</option>
+            <option value="Legume">Legume</option>
+            <option value="Verdura">Verdura</option>
+        </select>
+        <br> <br>
+        <button id="botao1" type="submit" onclick="cadastrar()">Clique para cadastrar produto</button> <br><br>
+        <button id="botao2" type="submit" onclick="mostrarfruta()">Clique para mostrar as frutas cadastradas</button>
+        <div id="divfruta"></div> <br>
+        <button id="botao3" type="submit" onclick="mostrarlegume()">Clique para mostrar os legumes cadastrados</button>
+        <div id="divlegume"></div> <br>
+        <button id="botao4" type="submit" onclick="mostrarverdura()">Clique para mostrar as verduras
+            cadastradas</button>
+        <div id="divverdura"></div>
+    </form>
+</body>
+
+</html>
