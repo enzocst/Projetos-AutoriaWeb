@@ -6,13 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        #instrucoes {
-            display: flex;
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
             background-color: mediumseagreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
         }
 
         .sectiondiv {
+            padding: 20px;
             background-color: aqua;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #resultado,
+        #atendemreq,
+        #naoatendemreq {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        #instrucoes {
+            display: flex;
+            background-color: mediumseagreen;
         }
     </style>
     <title>TRABALHINHO SHOW - INFO 3B</title>
