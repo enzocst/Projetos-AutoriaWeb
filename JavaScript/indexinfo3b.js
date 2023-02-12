@@ -24,20 +24,20 @@ function cadastrarproduto() {
     else {
         totalprodutos = totalprodutos + 1;
         totalpreco = totalpreco + parseFloat(precoproduto);
-        atendem [x] = (nomeproduto) + "R$" + (precoproduto);
-        x++;
         resultado.innerHTML = String(totalpreco);
         atendemreq.innerHTML = String(totalprodutos);
+        atendem [x] = (nomeproduto) + "R$" + (precoproduto);
+        x++;
         document.getElementById('produto').value = '';
         document.getElementById('preco').value = '';
         document.getElementById('produto').focus();
     }
 }
 function atender(){
-    antendemreq2.innerHTML = "";
+    atendemreq2.innerHTML = "";
     var j = 0;
     while (j <= (x - 1)) {
-        antendemreq2.innerHTML = antendemreq2.innerHTML + String(atendem[j]) + "<br>";
+        atendemreq2.innerHTML = atendemreq2.innerHTML + String(atendem[j]) + "<br>";
         j++;
     }
 }
